@@ -70,7 +70,7 @@ export default {
     methods: {
         async authenticateUser() {
             try {
-                const result = await axios.post("http://127.0.0.1:8000/api/login/user", this.formData);
+                const result = await axios.post("https://ats-backend-pov9.onrender.com/api/login/user", this.formData);
                 console.log(result);
                 if (result.data.status == "success") {
                     localStorage.setItem('token', result.data.token);

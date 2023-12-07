@@ -43,7 +43,7 @@ export default {
         async getJob(){
      
        
-     await axios.get(`http://127.0.0.1:8000/api/job/${this.$route.params.id}`).then((res)=>{
+     await axios.get(`https://ats-backend-pov9.onrender.com/api/job/${this.$route.params.id}`).then((res)=>{
 
       if (res.data.status=="success") {
        this.job = res.data.data

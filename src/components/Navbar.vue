@@ -179,7 +179,7 @@ export default {
      async logout(){
       this.token = localStorage.getItem('token'); 
        
-       await axios.get('http://127.0.0.1:8000/api/logout/user',{
+       await axios.get('https://ats-backend-pov9.onrender.com/api/logout/user',{
          headers: {'Authorization': `Bearer ${this.token}`}
        }).then((res)=>{
  

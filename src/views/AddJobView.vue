@@ -200,7 +200,7 @@ import Navbar from '../components/Navbar.vue';
          console.log(this.formData)
           this.token = localStorage.getItem('token'); 
        
-      await axios.post('http://127.0.0.1:8000/api/job',this.formData,{
+      await axios.post('https://ats-backend-pov9.onrender.com/api/job',this.formData,{
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
 

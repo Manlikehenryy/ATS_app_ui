@@ -200,7 +200,7 @@ import Navbar from '../components/Navbar.vue';
          form.append('certification',this.certification);
          form.append('bachelordeg',this.bachelordeg);
 
-      await axios.post('http://127.0.0.1:8000/api/access/applicant',form).then((res)=>{
+      await axios.post('https://ats-backend-pov9.onrender.com/api/access/applicant',form).then((res)=>{
        
         if (res.data.status=="success") {
         console.log(res.data);

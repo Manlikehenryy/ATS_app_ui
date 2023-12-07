@@ -103,7 +103,7 @@ import axios from 'axios';
   
     try {
       console.log(this.formData)
-     const response = await axios.post("http://127.0.0.1:8000/api/register/user",this.formData)
+     const response = await axios.post("https://ats-backend-pov9.onrender.com/api/register/user",this.formData)
     console.log(response)
      if (response.data.status="success") {
         this.$router.push({

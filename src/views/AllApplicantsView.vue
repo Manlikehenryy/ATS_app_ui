@@ -82,7 +82,7 @@ import Navbar from '../components/Navbar.vue';
     components: { RouterLink,Navbar },
     async mounted(){
       this.token = localStorage.getItem('token'); 
-     await axios.get(`http://127.0.0.1:8000/api/get/applicants?jobId=${this.jobId}&statusId=${this.statusId}`,{
+     await axios.get(`https://ats-backend-pov9.onrender.com/api/get/applicants?jobId=${this.jobId}&statusId=${this.statusId}`,{
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
         this.applicants = res.data.data.applicants 
@@ -97,7 +97,7 @@ import Navbar from '../components/Navbar.vue';
     },
     methods:{
      async filterApplicants(){
-      await axios.get(`http://127.0.0.1:8000/api/get/applicants?jobId=${this.jobId}&statusId=${this.statusId}`,{
+      await axios.get(`https://ats-backend-pov9.onrender.com/api/get/applicants?jobId=${this.jobId}&statusId=${this.statusId}`,{
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
         this.applicants = res.data.data.applicants 

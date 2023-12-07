@@ -103,7 +103,7 @@ import Navbar from '../components/Navbar.vue';
     async mounted(){
       
       this.token = localStorage.getItem('token'); 
-     await axios.get(`http://127.0.0.1:8000/api/get/applicant?applicantId=${this.$route.params.id}`,{
+     await axios.get(`https://ats-backend-pov9.onrender.com/api/get/applicant?applicantId=${this.$route.params.id}`,{
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
         this.applicant = res.data.data 
@@ -113,7 +113,7 @@ import Navbar from '../components/Navbar.vue';
     methods:{
         async updateStatus(){
             this.token = localStorage.getItem('token'); 
-            await axios.get(`http://127.0.0.1:8000/api/applicant/status?statusId=${this.statusId}&applicantId=${this.$route.params.id}`,{
+            await axios.get(`https://ats-backend-pov9.onrender.com/api/applicant/status?statusId=${this.statusId}&applicantId=${this.$route.params.id}`,{
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
        if (res.data.status=="success") {

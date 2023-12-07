@@ -52,7 +52,7 @@ import Navbar from '../components/Navbar.vue';
        async getAllJobs(){
      
        
-      await axios.get('http://127.0.0.1:8000/api/job').then((res)=>{
+      await axios.get('https://ats-backend-pov9.onrender.com/api/job').then((res)=>{
 
        if (res.data.status=="success") {
         this.jobs = res.data.data
