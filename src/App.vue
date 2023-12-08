@@ -27,11 +27,11 @@ import Navbar from './components/Navbar.vue';
 
 <style >
 input,textarea,select{
-  padding: 10px;
+  padding: 10px !important;
 }
 
 *{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 /* header {
   line-height: 1.5;
