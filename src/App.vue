@@ -33,6 +33,9 @@ input,textarea,select{
 *{
   font-family: 'Poppins', sans-serif !important;
 }
+.container{
+  width: 60%;
+}
 /* header {
   line-height: 1.5;
   max-height: 100vh;
