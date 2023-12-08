@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar.vue';
 
 <template>
      <Navbar/>
-    <form v-if="showForm" class="container form-container" >
+    <form v-if="showForm" class="form-container container" >
      <div class="space-y-12">
 
       <div class="border-b border-gray-900/10 pb-12">
@@ -242,7 +242,7 @@ import Navbar from '../components/Navbar.vue';
    </script>
    
    <style>
-   .form-container{
+   form.form-container{
     box-shadow: 0 0 8px rgba(0,0,0,0.2) !important; 
     padding-top: 30px !important;
     padding-bottom: 30px !important; 
