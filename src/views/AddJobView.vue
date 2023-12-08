@@ -241,4 +241,10 @@ import Navbar from '../components/Navbar.vue';
    }
    </script>
    
+   <style>
+  input,textarea,select{
+  padding: 10px;
+}
+
+  </style>
  
