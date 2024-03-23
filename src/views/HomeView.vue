@@ -7,10 +7,9 @@ import Navbar from '../components/Navbar.vue';
      <Navbar/>
   <div style="margin-top: -100px;" class="bg-white">
     
-    <!-- <div v-if="!jobs" class="loading loading-spinner"></div> -->
-      <div class="container"> <div class="spinner loading loading-spinner"></div></div>
+      <div v-if="!jobs" class="container"> <div class="spinner loading loading-spinner"></div></div>
    
-  <!-- <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
+  <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
   <RouterLink :to="{name: 'viewJob', params:{id:job.id}}">
   
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -28,7 +27,7 @@ import Navbar from '../components/Navbar.vue';
  
  </RouterLink>
  
-  </div> -->
+  </div>
 
 
 
