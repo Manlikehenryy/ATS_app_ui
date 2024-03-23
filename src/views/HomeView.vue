@@ -88,8 +88,11 @@ import Navbar from '../components/Navbar.vue';
        if (res.data.status=="success") {
         this.showSpinner = false;
         this.jobs = res.data.data
-        this.jobs = [];
-        this.showNoJob = true;
+        
+        if (res.data.data.length == 0) {
+          this.showNoJob = true;
+        }
+        
        }
 
       }).catch((err)=>{  
