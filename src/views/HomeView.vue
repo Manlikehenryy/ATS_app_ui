@@ -9,7 +9,7 @@ import Navbar from '../components/Navbar.vue';
 
     <!-- <h6 v-if="!jobs">Loading...</h6> -->
     <div style="margin: auto;">
-      <h6 style="margin-top:100px; text-align: center;">Loading...</h6>
+      <h6 style="margin-top:300px; text-align: center;">Loading...</h6>
     </div>
     
   <!-- <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
