@@ -44,7 +44,7 @@ import Navbar from '../components/Navbar.vue';
 }
 
 .container h3 {
-  width: 3rem;
+  font-weight: bolder;
   position: absolute;
   top: 40%;
   left: 50%;
