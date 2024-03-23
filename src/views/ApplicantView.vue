@@ -107,6 +107,7 @@ import Navbar from '../components/Navbar.vue';
         headers: {'Authorization': `Bearer ${this.token}`}
       }).then((res)=>{
         this.applicant = res.data.data 
+        this.applicant.file_path = "https://ats-backend-pov9.onrender.com" + this.applicant.file_path
         this.statusId = res.data.data.status 
         console.log( res.data)}).catch((err)=>{console.log(err)})
     },
