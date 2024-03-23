@@ -45,9 +45,9 @@ import Navbar from '../components/Navbar.vue';
 }
 
 .container .spinner {
-  width: 5rem;
+  width: 3rem;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%; /* Ensure the image doesn't exceed the container's width */
