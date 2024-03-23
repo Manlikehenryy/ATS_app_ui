@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar.vue';
      <Navbar/>
   <div style="margin-top: -100px;" class="bg-white">
     
-      <div v-if="true" class="container"> <div class="spinner loading loading-spinner"></div></div>
+      <div v-if="showSpinner" class="container"> <div class="spinner loading loading-spinner"></div></div>
    
   <!-- <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
   <RouterLink :to="{name: 'viewJob', params:{id:job.id}}">
@@ -62,7 +62,8 @@ import Navbar from '../components/Navbar.vue';
     
      data(){
      return {
-      jobs:[]
+      jobs:[],
+      showSpinner: true
      }
      },
      mounted(){
@@ -75,6 +76,7 @@ import Navbar from '../components/Navbar.vue';
       await axios.get('https://ats-backend-pov9.onrender.com/api/job').then((res)=>{
 
        if (res.data.status=="success") {
+        this.showSpinner = false;
         this.jobs = res.data.data
        }
 
