@@ -30,7 +30,7 @@ import Navbar from '../components/Navbar.vue';
       <template #fallback>
         <div v-if="!jobs" class="container"> <div class="spinner loading loading-spinner"></div></div>
       </template>
-      
+
     </Suspense>
     
       <!-- <div v-if="!jobs" class="container"> <div class="spinner loading loading-spinner"></div></div> -->
@@ -98,7 +98,7 @@ import Navbar from '../components/Navbar.vue';
        async getAllJobs(){
      
        
-      await axios.get('https://ats-backend-pov9.onrender.com/api/job').then((res)=>{
+      await axios.get('https://ats-backend-pov9.onrender.com/api/jo').then((res)=>{
 
        if (res.data.status=="success") {
         this.jobs = res.data.data
