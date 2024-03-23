@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar.vue';
   <div style="margin-top: -100px;" class="bg-white">
     
       <div v-if="showSpinner" class="container"> <div class="spinner loading loading-spinner"></div></div>
-      <div v-if="!jobs" class="container"> <h3 >No jobs available!</h3></div>
+      <div v-if="jobs.length == 0" class="container"> <h3 >No jobs available!</h3></div>
   <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
   <RouterLink :to="{name: 'viewJob', params:{id:job.id}}">
   
