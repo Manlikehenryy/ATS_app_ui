@@ -6,12 +6,10 @@ import Navbar from '../components/Navbar.vue';
 <template>
      <Navbar/>
   <div style="margin-top: -100px;" class="bg-white">
-
-    <!-- <h6 v-if="!jobs">Loading...</h6> -->
-    <!-- <div style="margin: auto;"> -->
-      <h6 style="position: absolute; transform: translateX(-50%);">Loading...</h6>
-    <!-- </div> -->
     
+    <h6 v-if="!jobs" class="loading loading-spinner" style="position: absolute; transform: translateX(-50%);">Loading...</h6>
+      <!-- <h6 v-if="!jobs" style="position: absolute; transform: translateX(-50%);">Loading...</h6> -->
+=    
   <!-- <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
   <RouterLink :to="{name: 'viewJob', params:{id:job.id}}">
   
