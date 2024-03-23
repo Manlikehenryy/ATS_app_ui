@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar.vue';
   <div style="margin-top: -100px;" class="bg-white">
 
     <!-- <h6 v-if="!jobs">Loading...</h6> -->
-    <h6 style="margin-top: 300px;">Loading...</h6>
+    <h6 style="margin: auto; text-align: center;">Loading...</h6>
   <!-- <div v-for="job in jobs" :key="job.id" style="margin-bottom: -220px;"  class="relative isolate px-6  lg:px-8">
   <RouterLink :to="{name: 'viewJob', params:{id:job.id}}">
   
